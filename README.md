@@ -15,10 +15,10 @@ This project will use several APIs to track the International space station and 
 
 ### API usage
 
-1.	ISS location data will be taken from the Open-Notify-API http://open-notify.org/Open-Notify-API/ISS-Location-Now/
++	ISS location data will be taken from the Open-Notify-API http://open-notify.org/Open-Notify-API/ISS-Location-Now/
 
-2.	ISS overhead passage times will be taken from the Open-Notify-API http://open-notify.org/Open-Notify-API/ISS-Pass-Times/
++	ISS overhead passage times will be taken from the Open-Notify-API http://open-notify.org/Open-Notify-API/ISS-Pass-Times/
 
-3.	The google maps API will be used to output the location https://developers.google.com/maps/
++	The google maps API will be used to output the location https://developers.google.com/maps/
 
 ### Strech Goals
