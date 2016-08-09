@@ -21,9 +21,8 @@ This project will use several APIs to track the International space station and 
 
 +	The google maps API will be used to output the location https://developers.google.com/maps/
 
-### Strech Goals
 
-## FUNCTIONS & JS files
+### FUNCTIONS & JS files
 
 + app.js will be the primary JS location
 	1. function() will be listed here
@@ -31,3 +30,9 @@ This project will use several APIs to track the International space station and 
 	1. function() will be listed here
 + overhead.js will contain the overhead pass estimations. It will be consolidated into app.js
 	1. function() will be listed here
+
+### Pages
++ iss.html will contain the google map
+
+
+#### Strech Goals
