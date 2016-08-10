@@ -1,4 +1,8 @@
 // To contain the Google API map JS
+/*
+// To be updated to dynamic locations from API call. For now targets codefellows PDX
+var issLat = 45.5163719;
+var issLng = -122.6765228;
 
 // Self invoking anonymous function to build the map
 (function(window, google) {
@@ -7,7 +11,7 @@
 	var options = {
 		center: {
 			lat: issLat,
-			lng: issLng;
+			lng: issLng
 		},
 		zoom: 10
 	}
@@ -18,8 +22,12 @@
 	map = new google.maps.Map(mapSpot, options);
 
 }(window, google));
+*/
 
-
-// To be updated to dynamic locations from API call. For now targets codefellows PDX
-var issLat = 45.5163719;
-var issLng = -122.6765228;
+var map;
+function initMap() {
+	map = new google.maps.Map(document.getElementById('mapCanvas'), {
+		center: {lat: -34.397, lng: 150.644},
+		zoom: 8
+	});
+}
