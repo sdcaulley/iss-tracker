@@ -3,6 +3,7 @@
 var issLat = 45.5163719;
 var issLng = -122.6765228;
 
+/*
 // Self invoking anonymous function to build the map
 (function(window, google) {
 
@@ -21,14 +22,13 @@ var issLng = -122.6765228;
 	map = new google.maps.Map(mapSpot, options);
 
 }(window, google));
+*/
 
-/*
+
 var map;
 function initMap() {
 	map = new google.maps.Map(document.getElementById('mapCanvas'), {
-		center: {lat: -34.397, lng: 150.644},
+		center: {lat: issLat, lng: issLng},
 		zoom: 8
 	});
 }
-
-*/
