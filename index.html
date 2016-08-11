@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal.css" />
   </head>
   <body>
     <header>
@@ -13,7 +14,34 @@
       </nav>
     </header>
     <content>
-      <!--User Instructions  -->
+      <div id="instructions">
+        <p>The thing is, Adam, time travel is like visiting Paris. You can't just read the guidebook, you've got to throw yourself in! Eat the food, use the wrong verbs, get charged double and end up kissing complete strangers! Or is that just me? Run. Lots of planets have a North. And everybody lives, Rose! Everybody lives! I need more days like this! Go on, ask me anything; I'm on fire! Now, don't antagonize her. I love a happy medium! Nine hundred years of time and space, and I've never been slapped by someone's mother.</p>
+
+        <p>Ricky, if I was to tell you what I was doing to the controls of my frankly magnificent timeship, would you even begin to understand? Lots of planets have a North. You look beautiful! ...considering. That you're human. One day, just one day, maybe I'll meet somebody who gets the whole 'don't wander off' thing. Yeah, I came first in jiggery pokery, what about you? We're fallin' through space, you and me, clinging to the skin of this tiny little world, and if we let go... t's called the TARDIS, this thing. T-A-R-D-I-S. That's Time And Relative Dimension In Space. That’s okay. Culture shock. Happens to the best of us.</p>
+
+        <p>Run. Excuse me, do you mind not farting while I'm saving the world? Do you wanna come with me? 'Cause if you do, then I should warn you — you're gonna see all sorts of things. Ghosts from the past. Aliens from the future. The day the Earth died in a ball of flame. It won't be quiet, it won't be safe, and it won't be calm. But I'll tell you what it will be: The trip of a lifetime! I think you need a doctor. An old friend of mine. Well, enemy. The stuff of nightmares reduced to an exhibit. I'm getting old.</p>
+      </div>
+      <div id="input-form">
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Start Your Adventure</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">x</span>
+            <h3>Welcome,  Tell us your name, and where you would like to view:</h3>
+            <form id="modal-form">
+              Name: <input type="text" name="userName"><br>
+              Latitude: <input type="text" name="userLat"><br>
+              Longitude: <input type="tex" name="userLong"><br>
+              <button id="user-input">Submit</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
     </content>
     <aside>
       <div id="twitter"><a class="twitter-timeline" data-width="300" data-height="600" href="https://twitter.com/ISS_Update">Tweets by ISS_Update</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
@@ -21,4 +49,5 @@
     </aside>
     <footer></footer>
   </body>
+  <script type="text/javascript" src="js/modal.js"></script>
 </html>
