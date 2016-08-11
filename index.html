@@ -39,9 +39,15 @@
               <button id="user-input">Submit</button>
             </form>
           </div>
-
         </div>
       </div>
+      <section onload="initialize()">
+       <div id="map" style="width: 320px; height: 480px;"></div>
+        <div>
+          <input id="address" type="textbox" value="Sydney, NSW">
+          <input type="button" value="Encode" onclick="codeAddress()">
+        </div>
+      </section>
     </content>
     <aside>
       <div id="twitter"><a class="twitter-timeline" data-width="300" data-height="600" href="https://twitter.com/ISS_Update">Tweets by ISS_Update</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
@@ -50,4 +56,6 @@
     <footer></footer>
   </body>
   <script type="text/javascript" src="js/modal.js"></script>
+  <script type="text/javascript" src="js/test.js"></script>
+
 </html>
