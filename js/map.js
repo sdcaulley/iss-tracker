@@ -1,34 +1,57 @@
 // To contain the Google API map JS
-// To be updated to dynamic locations from API call. For now targets codefellows PDX
+
+var issLocation = {};
+var passTimes = {};
 var issLat = 45.5163719;
 var issLng = -122.6765228;
-
-/*
-// Self invoking anonymous function to build the map
-(function(window, google) {
-
-	// Options here can be added as necessary, Check the google maps dev docs for full list
-	var options = {
-		center: {
-			lat: issLat,
-			lng: issLng
-		},
-		zoom: 10
-	}
-	// Targeting the map location in iss.html
-	mapSpot = document.getElementById('mapCanvas'),
-
-	// Building a map in the location specified
-	map = new google.maps.Map(mapSpot, options);
-
-}(window, google));
-*/
-
-
 var map;
+
+// Recieves the ISS location from JSONP
+var script = document.createElement('script');
+script.src = 'http://api.open-notify.org/iss-now.json?callback=issLoc'
+document.head.appendChild(script);
+console.log("Iss Location updated");
+script.parentNode.removeChild(script);
+console.log("Iss location script cleared");
+
+// ISS location data is stored in this
+function issLoc(data) {
+	issLat = data.iss_position.latitude;
+	issLng = data.iss_position.longitude;
+	issLocation = data;
+	initMap();
+}
+
+// Receives the overhead pass estimates from JSONP
+function getPass(lat, lng) {
+	var script = document.createElement('script');
+	script.src = 'http://api.open-notify.org/iss-pass.json?lat='+lat+'&lon='+ln+'&callback=passTimes'
+	document.head.appendChild(script);
+	console.log("passTimes script Loaded");
+	script.parentNode.removeChild(script);
+	console.log("passTimes script cleared");
+}
+
+function passTimes(data) {
+ // Parking for future code
+}
+
+// Receives the overhead pass estimates from JSONP
+var script = document.createElement('script');
+script.src = 'http://api.open-notify.org/astros.json?callback=inSpace'
+document.head.appendChild(script);
+console.log("passTimes script Loaded");
+script.parentNode.removeChild(script);
+console.log("passTimes script cleared");
+
+function inSpace(data) {
+	number
+}
+
+// Draws the map
 function initMap() {
 	map = new google.maps.Map(document.getElementById('mapCanvas'), {
 		center: {lat: issLat, lng: issLng},
-		zoom: 8
+		zoom: 5
 	});
 }
