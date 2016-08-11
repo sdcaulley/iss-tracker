@@ -5,6 +5,8 @@ var passTimes = {};
 var issLat = 45.5163719;
 var issLng = -122.6765228;
 var map;
+var numberAstro;
+var namesInSpace;
 
 // Recieves the ISS location from JSONP
 var script = document.createElement('script');
@@ -40,18 +42,19 @@ function passTimes(data) {
 var script = document.createElement('script');
 script.src = 'http://api.open-notify.org/astros.json?callback=inSpace'
 document.head.appendChild(script);
-console.log("passTimes script Loaded");
+console.log("Astronaut script Loaded");
 script.parentNode.removeChild(script);
-console.log("passTimes script cleared");
+console.log("Astronaut script cleared");
 
 function inSpace(data) {
-	number
+	numberAstro = data.number;
+	namesInSpace = data.people;
 }
 
 // Draws the map
 function initMap() {
 	map = new google.maps.Map(document.getElementById('mapCanvas'), {
 		center: {lat: issLat, lng: issLng},
-		zoom: 5
+		zoom: 7
 	});
 }
