@@ -1,5 +1,4 @@
 // To contain the Google API map JS
-
 var issLocation = {};
 var passTimes = {};
 var issLat = 45.5163719;
@@ -53,6 +52,7 @@ function inSpace(data) {
 
 // Draws the map
 function initMap() {
+	geocoder = new google.maps.Geocoder()
 	map = new google.maps.Map(document.getElementById('mapCanvas'), {
 		center: {lat: issLat, lng: issLng},
 		zoom: 7
