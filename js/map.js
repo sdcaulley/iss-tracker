@@ -36,6 +36,7 @@ function getPass(lat, lng) {
 
 function passTimes(data) {
  // Parking for future code
+ 
 }
 
 // Receives the overhead pass estimates from JSONP

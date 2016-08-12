@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav></nav>
-    </header>
+    <!-- <header> -->
+      <ul class="topnav" id="myTopnav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    <!-- </header> -->
+    <!-- <div id="myStatus">
+      <div id="myBar">
+        <div id="label">10%</div>
+        <button type="button" onclick="move()">Click Me</button>
+      </div>
+    </div> -->
+
+    <!-- Table for ISS lauch station and ISS passing duration -->
+    <table id="iss-passing">
+        <tr>
+            <th>
+              ISS Launch Station
+            </th>
+            <th>
+              ISS Passing Duration
+            </th>
+        </tr>
+        <tr>
+          <td>
+            Pegasus
+          </td>
+          <td>
+            2 hours until passing
+          </td>
+        </tr>
+    </table>
+
     <content></content>
     <footer></footer>
+    <script type="text/javascript" src="js/app.js">
+
+    </script>
   </body>
 </html>
