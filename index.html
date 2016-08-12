@@ -34,28 +34,24 @@
             <h3>Welcome,  Tell us your name, and where you would like to view:</h3>
             <form id="modal-form">
               Name: <input type="text" name="userName"><br>
-              Latitude: <input type="text" name="userLat"><br>
-              Longitude: <input type="tex" name="userLong"><br>
-              <button id="user-input">Submit</button>
+              Latitude: <input id="address" type="textbox" value="Sydney, NSW"><br>
+              <input type="button" value="Encode" onclick="codeAddress()">
             </form>
           </div>
         </div>
       </div>
       <section onload="initialize()">
        <div id="map" style="width: 320px; height: 480px;"></div>
-        <div>
-          <input id="address" type="textbox" value="Sydney, NSW">
-          <input type="button" value="Encode" onclick="codeAddress()">
-        </div>
       </section>
     </content>
     <aside>
       <div id="twitter"><a class="twitter-timeline" data-width="300" data-height="600" href="https://twitter.com/ISS_Update">Tweets by ISS_Update</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-      <div id="location-form"><!-- user import form --></div>
     </aside>
     <footer></footer>
   </body>
   <script type="text/javascript" src="js/modal.js"></script>
   <script type="text/javascript" src="js/test.js"></script>
-
+  <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDajRBtGGCaz958ss2pOvejMODnI4lhrr0&callback=initialize">
+   </script>
 </html>
