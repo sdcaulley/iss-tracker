@@ -54,7 +54,13 @@ function inSpace(data) {
 // Draws the map
 function initMap() {
 	map = new google.maps.Map(document.getElementById('mapCanvas'), {
-		center: {lat: issLat, lng: issLng},
-		zoom: 7
+
+	center: {lat: issLat, lng: issLng},
+	zoom: 7,
+	disableDefaulyUI: true,
+	scrollwheel: false,
+	draggable: false,
+	mapTypeID: google.maps.MapTypeID.SATELLITE,
+
 	});
 }
