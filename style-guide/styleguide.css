@@ -1,10 +1,9 @@
-/*  style */
-@import ("css/layout.css");
+body{
+  background-color: #ffffff;
+}
 
-html, body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
+.container{
+  padding-top: 50px;
   margin: 0 auto;
   text-align: center;
   font-family: 'Lora', serif;
@@ -18,42 +17,58 @@ html, body {
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;  color: #ffffff;
 }
-#mapCanvas {
-	margin: 0 auto;
-	height: 60%;
-	width: 60%;
-}
-
-/* Logo Related */
 
 .main-logo{
   margin: 0 auto;
-  width: 30%;
-  height: 30%;
-	display: block;
-	padding-bottom: 10%;
+  width: 200px;
+  height: 200px;
 }
-.logo-text{
-	margin: 0 auto;
-	text-align: center;
+#logo-text{
   font-family: 'Audiowide', cursive;
   font-weight: normal;
   color: #069cf9;
-  font-size: 30px;
-	display: block;
+  font-size: 50px;
 }
 
-.main-form{
-	margin: 0 auto;
-	display: block;
-	text-align: center;
+#logo-text2{
+  font-size: 40px;
 }
 
+#header{
+  font-family: 'Roboto', sans-serif;
+  color: #e32e3d;
+}
 
-/* Footer */
+#header1, #header2, #header3, #header4{
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+}
+
+#header3{
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+}
+
+.color_pallete,{
+  margin: 0 auto;
+  display: inline-block;
+}
+#color1, #color2, #color3, #color4{
+  width: 100px;
+  height: 100px;
+}
+
+#highlight{
+  font-weight: bold;
+  font-size: 18px;
+  color: #e32e3d;
+}
+
+#break{
+  border: 2px solid #ffffff;
+}
 
 footer{
-	text-align: center;
   padding: 10px;
   font-size: 10px;
 }
