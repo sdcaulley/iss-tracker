@@ -65,6 +65,5 @@ function initMap() {
 	scrollwheel: false,
 	draggable: false,
 	mapTypeID: google.maps.MapTypeId.SATELLITE,
-
 	});
 }
