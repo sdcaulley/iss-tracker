@@ -53,6 +53,9 @@ function inSpace(data) {
 	numberAstro = data.number; // Qty of people currently in space
 	namesInSpace = data.people; // Names of the people in space
 }
+function inSpace(data) {
+	
+}
 
 // Draws the map
 function initMap() {
