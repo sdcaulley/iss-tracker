@@ -6,6 +6,7 @@ var issLng = -122.6765228; // code fellows longitude
 var map; // google map object
 var numberAstro; // API created objects with qty of people in space
 var namesInSpace; // API created objects with Astronaut names and current vessels
+var passEstimate; // API created object of the overhead pass estimate
 
 // Recieves the ISS location from JSONP
 var script = document.createElement('script');
@@ -35,7 +36,7 @@ function getPass(lat, lng) {
 
 // contains the trackign data from a overhead pass API request
 function passTimes(data) {
- // Parking for future code
+ passEstimate = data;
 }
 
 // Receives the overhead pass estimates from JSONP
