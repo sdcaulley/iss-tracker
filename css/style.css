@@ -38,7 +38,7 @@ aside{
 	width:75%;
 	height: auto;
 }
-content{
+.astronaut-info{
 	box-sizing: border-box;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -73,13 +73,21 @@ content{
 	text-align: center;
 }
 
-.col_3, img{
+.astronaut-name{
 	margin: 0 auto;
 	border-radius:50%;
-	width:50%;
-	height: 50%;
+	width:30%;
+	height: 30%;
 }
 
+.astronaut-table, td, th{
+	margin: 0 auto;
+	border: 1px solid #ffffff;
+  border-collapse: collapse;
+	padding: 5px;
+  text-align: left;
+
+}
 /* Footer */
 
 footer{
