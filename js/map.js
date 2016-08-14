@@ -1,12 +1,11 @@
 // To contain the Google API map JS
-var issLocation = {};
-var passTimes = {};
-var issLat = 45.5163719;
-var issLng = -122.6765228;
-var map;
-var numberAstro;
-var namesInSpace;
-var userLatLng;
+var issLocation = {}; // initiate empty lat-long object
+var passTimes = {}; // initiate empty pass time data obj
+var issLat = 45.5163719; // code fellows latitude
+var issLng = -122.6765228; // code fellows longitude
+var map; // google map object
+var numberAstro; // API created objects with qty of people in space
+var namesInSpace; // API created objects with Astronaut names and current vessels
 
 // Recieves the ISS location from JSONP
 var script = document.createElement('script');
@@ -34,29 +33,38 @@ function getPass(lat, lng) {
 	console.log("passTimes script cleared");
 }
 
+// contains the trackign data from a overhead pass API request
 function passTimes(data) {
  // Parking for future code
 }
 
 // Receives the overhead pass estimates from JSONP
-var script = document.createElement('script');
-script.src = 'http://api.open-notify.org/astros.json?callback=inSpace'
-document.head.appendChild(script);
-console.log("Astronaut script Loaded");
-script.parentNode.removeChild(script);
-console.log("Astronaut script cleared");
+function getAstronaut() {
+	var script = document.createElement('script');
+	script.src = 'http://api.open-notify.org/astros.json?callback=inSpace'
+	document.head.appendChild(script);
+	console.log("Astronaut script Loaded");
+	script.parentNode.removeChild(script);
+	console.log("Astronaut script cleared");
+}
 
+// Contains the Data from getAstronaut() which gives names and current craft
 function inSpace(data) {
-	numberAstro = data.number;
-	namesInSpace = data.people;
+	numberAstro = data.number; // Qty of people currently in space
+	namesInSpace = data.people; // Names of the people in space
 }
 
 // Draws the map
 function initMap() {
 	geocoder = new google.maps.Geocoder()
 	map = new google.maps.Map(document.getElementById('mapCanvas'), {
-		center: {lat: issLat, lng: issLng},
-		zoom: 7
+
+	center: {lat: issLat, lng: issLng},
+	zoom: 7,
+	disableDefaulyUI: true,
+	scrollwheel: false,
+	draggable: false,
+	mapTypeID: google.maps.MapTypeId.SATELLITE,
 	});
 }
 
