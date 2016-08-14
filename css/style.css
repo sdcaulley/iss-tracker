@@ -26,16 +26,15 @@ html, body {
 
 aside{
 	box-sizing: border-box;
-	background-color: red;
   display: block;
   float: right;
   width: 33%;
 	height: 400px;
 }
 
-.twitter{
+.twitter-timeline{
 	display: block;
-	width:75%;
+	width:100%;
 	height: auto;
 }
 .astronaut-info{
@@ -46,6 +45,11 @@ aside{
 	float: left;
 	width: 66%;
 	height: auto;
+}
+
+.bio-paragraph{
+	padding: 50px;
+	box-sizing: border-box;
 }
 
 /* Logo Related */
