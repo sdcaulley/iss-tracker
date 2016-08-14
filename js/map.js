@@ -6,6 +6,7 @@ var issLng = -122.6765228;
 var map;
 var numberAstro;
 var namesInSpace;
+var userLatLng;
 
 // Recieves the ISS location from JSONP
 var script = document.createElement('script');
@@ -57,4 +58,19 @@ function initMap() {
 		center: {lat: issLat, lng: issLng},
 		zoom: 7
 	});
+}
+
+var geocoder
+
+// grab lat lng from user submit
+function grabLatLng() {
+	var addrss = JSON.parse(sessionStorage.getItem('address'))
+  geocoder.geocode( { 'address': address}, function(results, status) {
+    if (status == 'OK') {
+			userLatLng = results[0].geometry.location
+      console.log(results[0].geometry.location)
+    } else {
+      alert('Geocode was not successful for the following reason: ' + status);
+    }
+  });
 }
