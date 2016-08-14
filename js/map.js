@@ -52,21 +52,19 @@ function getAstronaut() {
 function inSpace(data) {
 	numberAstro = data.number; // Qty of people currently in space
 	namesInSpace = data.people; // Names of the people in space
+	console.log(data);
+	for (i = 0; i < data.people.length; i++) {
+    console.log(data.people[i].name+" is currently aboard the "+data.people[i].craft); // Console logs names and craft in calling getAstronaut()
+	}
 }
-function inSpace(data) {
-	
-}
+
 
 // Draws the map
 function initMap() {
 	geocoder = new google.maps.Geocoder()
 	map = new google.maps.Map(document.getElementById('mapCanvas'), {
+		center: {lat: issLat, lng: issLng},
+		zoom: 7
 
-	center: {lat: issLat, lng: issLng},
-	zoom: 7,
-	disableDefaulyUI: true,
-	scrollwheel: false,
-	draggable: false,
-	mapTypeID: google.maps.MapTypeId.SATELLITE,
 	});
 }
