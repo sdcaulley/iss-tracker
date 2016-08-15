@@ -42,4 +42,3 @@ This project will use several APIs to track the International space station and 
 
 
 #### Strech Goals
-s

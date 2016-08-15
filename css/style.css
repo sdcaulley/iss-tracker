@@ -5,8 +5,94 @@ html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  background-color: #01193b;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;  color: #ffffff;
 }
 #mapCanvas {
+	margin: 0 auto;
 	height: 60%;
 	width: 60%;
+}
+
+aside{
+	box-sizing: border-box;
+	background-color: red;
+  display: block;
+  float: right;
+  width: 33%;
+	height: 400px;
+}
+
+.twitter{
+	display: block;
+	width:75%;
+	height: auto;
+}
+.astronaut-info{
+	box-sizing: border-box;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+	float: left;
+	width: 66%;
+	height: auto;
+}
+
+/* Logo Related */
+
+.main-logo{
+  margin: 0 auto;
+  width: 30%;
+  height: 30%;
+	display: block;
+	padding-bottom: 10%;
+}
+.logo-text{
+	margin: 0 auto;
+	text-align: center;
+  font-family: 'Audiowide', cursive;
+  font-weight: normal;
+  color: #069cf9;
+  font-size: 30px;
+	display: block;
+}
+
+.main-form{
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+
+.astronaut-name{
+	margin: 0 auto;
+	border-radius:50%;
+	width:30%;
+	height: 30%;
+}
+
+.astronaut-table, td, th{
+	margin: 0 auto;
+	border: 1px solid #ffffff;
+  border-collapse: collapse;
+	padding: 5px;
+  text-align: left;
+
+}
+/* Footer */
+
+footer{
+	clear: both;
+	text-align: center;
+  padding: 10px;
+  font-size: 10px;
 }
