@@ -1,21 +1,3 @@
- /*// start
-function Astronaut(name, craft) {
-	this.name = name;
-	this.craft = craft;
-	this.image = "";
-	this.biography = "";
-}
-
-Astronaut.prototype.addBio(biography) {
-	this.biography = biography;
-}
-
-Astronaut.prototype.addPicture(imgLink) {
-	this.image = imgLink;
-}*/
-
-// document.getElementById('formButton').addEventListener('click', grabLatLng)
-
 //function to store user name
 function storeUserInput () {
 	var userLocation = document.getElementById('address').value
