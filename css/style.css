@@ -3,7 +3,6 @@
 
 html, body {
 	height: 100%;
-	margin: 0;
 	padding: 0;
   margin: 0 auto;
   text-align: center;
@@ -23,10 +22,41 @@ html, body {
 	height: 60%;
 	width: 60%;
 }
+/* Navigation */
+
+header{
+	font-family: 'Audiowide', cursive;
+  font-weight: normal;
+	margin: 0 auto;
+}
+
+.navbar, ul, li{
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+	box-sizing: border-box;
+	display: inline-block;
+	color: #ffffff;
+}
+
+a:link{
+		text-decoration: none;
+}
+a:visited {
+    color: #ffffff;
+		text-decoration: none;
+}
+a:hover {
+    color: #069cf9;
+		text-decoration: none;
+}
+a.active {
+    color: #e32e3d;
+		text-decoration: none;
+}
 
 aside{
 	box-sizing: border-box;
-	background-color: red;
   display: block;
   float: right;
   width: 33%;
@@ -49,7 +79,6 @@ aside{
 }
 
 /* Logo Related */
-
 .main-logo{
   margin: 0 auto;
   width: 30%;
@@ -84,7 +113,7 @@ aside{
 	margin: 0 auto;
 	border: 1px solid #ffffff;
   border-collapse: collapse;
-	padding: 5px;
+	padding: 10px;
   text-align: left;
 
 }
