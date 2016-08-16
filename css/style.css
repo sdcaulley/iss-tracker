@@ -24,6 +24,30 @@ html, body {
 	width: 80%;
 }
 
+aside{
+	box-sizing: border-box;
+	background-color: red;
+  display: block;
+  float: right;
+  width: 33%;
+	height: 400px;
+}
+
+.twitter{
+	display: block;
+	width:75%;
+	height: auto;
+}
+.astronaut-info{
+	box-sizing: border-box;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+	float: left;
+	width: 66%;
+	height: auto;
+}
+
 /* Logo Related */
 
 .main-logo{
@@ -49,10 +73,25 @@ html, body {
 	text-align: center;
 }
 
+.astronaut-name{
+	margin: 0 auto;
+	border-radius:50%;
+	width:30%;
+	height: 30%;
+}
 
+.astronaut-table, td, th{
+	margin: 0 auto;
+	border: 1px solid #ffffff;
+  border-collapse: collapse;
+	padding: 5px;
+  text-align: left;
+
+}
 /* Footer */
 
 footer{
+	clear: both;
 	text-align: center;
   padding: 10px;
   font-size: 10px;
