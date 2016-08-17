@@ -47,6 +47,7 @@ function issLoc(data) {
 	parkedDataIss = new google.maps.LatLng(issLat, issLng);
 	map.setCenter(new google.maps.LatLng(issLat, issLng));
 	// console.log("issLocation");
+  document.getElementById("theISSIsLocatedAt").textContent = "ISS longitude: "+issLng+" latitude: "+issLat;
 }
 
 //Gets new ISS data and sets map center every 5 seconds
