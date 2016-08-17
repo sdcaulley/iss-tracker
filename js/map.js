@@ -10,9 +10,10 @@ var passEstimate; // API created object of the overhead pass estimate
 var issLocRequests = 0; // counts every time new location is recieved
 var issOverlay; // Google map ISS overlay
 var parkedDataIss // Holds lat-long obj
+var geocoder;
 var mapOptions = {
  center: {lat: issLat, lng: issLng},
- zoom: 6,
+ zoom: 5,
  mapTypeId: 'satellite',
  draggable: false,
  scrollwheel: false,
@@ -23,16 +24,13 @@ var mapOptions = {
 function initMap() {
 	geocoder = new google.maps.Geocoder();
 	map = new google.maps.Map(document.getElementById('mapCanvas'), mapOptions);
-	var issImg = new google.maps.MarkerImage("img/ISS.svg",
-      new google.maps.Size(21, 21),     // size
-      new google.maps.Point(0, 0),      // origin
-      new google.maps.Point(10, 10));   // anchor
-  issOverlay = new google.maps.Marker({
-    position: parkedDataIss,
-    map: map,
-    icon: issImg
-  })
 }
+
+
+
+
+
+
 
 
 // Recieves the ISS location from JSONP
@@ -40,11 +38,13 @@ function findISS() {
 	var script = document.createElement('script');
 	script.src = 'http://api.open-notify.org/iss-now.json?callback=issLoc'
 	document.head.appendChild(script);
-	console.log("Iss Location updated");
+	// console.log("Iss Location updated");
 	script.parentNode.removeChild(script);
-	console.log("Iss location script cleared");
+	// console.log("Iss location script cleared");
 	issLocRequests++;
-	console.log(issLocRequests);
+	// document.getElementById("userIsLocatedAt").textContent =
+	document.getElementById("userISSLocateReq").textContent = "Telemetry Request: 0"+issLocRequests;
+	// console.log(issLocRequests);
 }
 
 
@@ -55,6 +55,7 @@ function issLoc(data) {
 	issLocation = data;
 	parkedDataIss = new google.maps.LatLng(issLat, issLng);
 	map.setCenter(new google.maps.LatLng(issLat, issLng));
+	// console.log("issLocation");
 }
 
 
