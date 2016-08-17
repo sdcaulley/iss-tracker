@@ -18,6 +18,7 @@ html, body {
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;  color: #ffffff;
 }
+/* Map */
 #mapCanvas {
 	margin: 0 auto;
 	height: 60%;
@@ -25,13 +26,11 @@ html, body {
 }
 
 /* Navigation */
-
 header{
 	font-family: 'Audiowide', cursive;
   font-weight: normal;
 	margin: 0 auto;
 }
-
 .navbar, ul, li{
 	padding-left: 10px;
 	padding-right: 10px;
@@ -40,7 +39,6 @@ header{
 	display: inline-block;
 	color: #ffffff;
 }
-
 a:link{
 		text-decoration: none;
 }
@@ -57,16 +55,15 @@ a.active {
 		text-decoration: none;
 }
 
-
+/* Sections */
 aside{
 	box-sizing: border-box;
 	background-color: #ffffff;
   display: block;
   float: right;
   width: 20%;
-	height: 400px;
+	height: auto;
 }
-
 .twitter{
 	display: block;
 	width:100%;
@@ -74,16 +71,22 @@ aside{
 }
 .astronaut-info{
 	box-sizing: border-box;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
 	display: block;
 	float: left;
-	width: 66%;
+	width: 80%;
 	height: auto;
+}
+#welcomeMessage{
+	text-align: center;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+	padding: 10px;
+	color: #e32e3d;
 }
 
 /* Logo Related */
-
 .main-logo{
   margin: 0 auto;
   width: 30%;
@@ -101,14 +104,6 @@ aside{
 	display: block;
 }
 
-
-/* Form */
-.main-form{
-	margin: 0 auto;
-	display: block;
-	text-align: center;
-}
-
 .astronaut-name{
 	margin: 0 auto;
 	border-radius:50%;
@@ -117,7 +112,6 @@ aside{
 }
 
 /* Tables */
-
 .astronaut-table, td, th{
 	margin: 0 auto;
 	border: 1px solid #ffffff;
@@ -130,8 +124,36 @@ aside{
 	padding-top: 30px;
 }
 
-/* Footer */
+#formButton{
+	border-radius: 5px;
+	color: #ffffff;
+	background-color: #069cf9;
+	padding: 10px;
+	border: none;
+}
 
+/* Form Related */
+.main-form{
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+#formButton:hover{
+	background-color: #e32e3d;
+	text-decoration: none;
+}
+#name{
+	border-radius: 5px;
+	border: none;
+	padding: 5px;
+}
+#address{
+	border-radius: 5px;
+	border: none;
+	padding: 5px;
+}
+
+/* Footer */
 footer{
 	clear: both;
 	text-align: center;
