@@ -20,8 +20,8 @@ html, body {
 }
 #mapCanvas {
 	margin: 0 auto;
-	height: 60%;
-	width: 60%;
+	height: 70%;
+	width: 80%;
 }
 
 /* Navigation */
@@ -137,4 +137,7 @@ footer{
 	text-align: center;
   padding: 10px;
   font-size: 10px;
+}
+#liveStream{
+	border: 0px none transparent;
 }
