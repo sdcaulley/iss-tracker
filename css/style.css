@@ -86,7 +86,10 @@ aside{
   border-collapse: collapse;
 	padding: 5px;
   text-align: left;
+}
 
+#wrap, img{
+	padding-top: 30px;
 }
 /* Footer */
 
