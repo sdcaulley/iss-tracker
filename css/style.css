@@ -19,10 +19,24 @@ html, body {
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;  color: #ffffff;
 }
 /* Map */
-#mapCanvas {
-	margin: 0 auto;
-	height: 70%;
-	width: 80%;
+content.map-content{
+	width: 66.5%;
+	height: 500px;
+	box-sizing: border-box;
+	float: left;
+}
+aside.map-aside{
+	width: 33.5%;
+	height:500px;
+	box-sizing: border-box;
+}
+#mapCanvas{
+	width: 100%;
+	height: 500px;
+}
+iframe{
+	width: 100%;
+	height: 500px;
 }
 
 /* Navigation */
