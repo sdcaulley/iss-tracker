@@ -1,2 +1,4 @@
 *.DS_Store
 .apiKey
+testbed.js
+testbed.html
