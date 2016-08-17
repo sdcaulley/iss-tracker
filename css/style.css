@@ -78,9 +78,15 @@ aside{
 	width: 80%;
 	height: auto;
 }
+#welcomeMessage{
+	text-align: center;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+	padding: 10px;
+	color: #e32e3d;
+}
 
 /* Logo Related */
-
 .main-logo{
   margin: 0 auto;
   width: 30%;
