@@ -3,6 +3,7 @@
 
 html, body {
 	height: 100%;
+	margin: 0;
 	padding: 0;
   margin: 0 auto;
   text-align: center;
@@ -22,6 +23,7 @@ html, body {
 	height: 60%;
 	width: 60%;
 }
+
 /* Navigation */
 
 header{
@@ -55,17 +57,19 @@ a.active {
 		text-decoration: none;
 }
 
+
 aside{
 	box-sizing: border-box;
+	background-color: #ffffff;
   display: block;
   float: right;
-  width: 33%;
+  width: 20%;
 	height: 400px;
 }
 
 .twitter{
 	display: block;
-	width:75%;
+	width:100%;
 	height: auto;
 }
 .astronaut-info{
@@ -79,6 +83,7 @@ aside{
 }
 
 /* Logo Related */
+
 .main-logo{
   margin: 0 auto;
   width: 30%;
@@ -96,6 +101,8 @@ aside{
 	display: block;
 }
 
+
+/* Form */
 .main-form{
 	margin: 0 auto;
 	display: block;
@@ -109,17 +116,20 @@ aside{
 	height: 30%;
 }
 
+/* Tables */
+
 .astronaut-table, td, th{
 	margin: 0 auto;
 	border: 1px solid #ffffff;
   border-collapse: collapse;
-	padding: 10px;
+	padding: 5px;
   text-align: left;
 }
 
 #wrap, img{
 	padding-top: 30px;
 }
+
 /* Footer */
 
 footer{
