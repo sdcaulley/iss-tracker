@@ -8,9 +8,11 @@ var numberAstro; // API created objects with qty of people in space
 var namesInSpace; // API created objects with Astronaut names and current vessels
 var passEstimate; // API created object of the overhead pass estimate
 var issLocRequests = 0; // counts every time new location is recieved
+var issOverlay; // Google map ISS overlay
+var parkedDataIss // Holds lat-long obj
 var mapOptions = {
  center: {lat: issLat, lng: issLng},
- zoom: 7,
+ zoom: 6,
  mapTypeId: 'satellite',
  draggable: false,
  scrollwheel: false,
@@ -19,8 +21,17 @@ var mapOptions = {
 
 // Draws the map
 function initMap() {
-	geocoder = new google.maps.Geocoder()
+	geocoder = new google.maps.Geocoder();
 	map = new google.maps.Map(document.getElementById('mapCanvas'), mapOptions);
+	var issImg = new google.maps.MarkerImage("img/ISS.svg",
+      new google.maps.Size(21, 21),     // size
+      new google.maps.Point(0, 0),      // origin
+      new google.maps.Point(10, 10));   // anchor
+  issOverlay = new google.maps.Marker({
+    position: parkedDataIss,
+    map: map,
+    icon: issImg
+  })
 }
 
 
@@ -42,6 +53,7 @@ function issLoc(data) {
 	issLat = data.iss_position.latitude;
 	issLng = data.iss_position.longitude;
 	issLocation = data;
+	parkedDataIss = new google.maps.LatLng(issLat, issLng);
 	map.setCenter(new google.maps.LatLng(issLat, issLng));
 }
 
