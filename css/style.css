@@ -82,7 +82,7 @@ aside{
 	text-align: center;
   font-family: 'Lora', serif;
   font-size: 20px;
-	padding: 10px;
+	padding: 20px;
 	color: #e32e3d;
 }
 
@@ -90,9 +90,9 @@ aside{
 .main-logo{
   margin: 0 auto;
   width: 30%;
-  height: 30%;
+  height: auto;
 	display: block;
-	padding-bottom: 10%;
+
 }
 .logo-text{
 	margin: 0 auto;
@@ -100,13 +100,13 @@ aside{
   font-family: 'Audiowide', cursive;
   font-weight: normal;
   color: #069cf9;
-  font-size: 30px;
+  font-size: 2em;
 	display: block;
+	position: relative;
 }
 
 .astronaut-name{
 	margin: 0 auto;
-	border-radius:50%;
 	width:30%;
 	height: 30%;
 }
@@ -116,7 +116,7 @@ aside{
 	margin: 0 auto;
 	border: 1px solid #ffffff;
   border-collapse: collapse;
-	padding: 5px;
+	padding: 10px;
   text-align: left;
 }
 
