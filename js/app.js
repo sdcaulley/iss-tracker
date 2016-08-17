@@ -1,26 +1,8 @@
- /*// start
-function Astronaut(name, craft) {
-	this.name = name;
-	this.craft = craft;
-	this.image = "";
-	this.biography = "";
-}
-
-Astronaut.prototype.addBio(biography) {
-	this.biography = biography;
-}
-
-Astronaut.prototype.addPicture(imgLink) {
-	this.image = imgLink;
-}*/
-
-// document.getElementById('formButton').addEventListener('click', grabLatLng)
-
 //function to store user name
 function storeUserInput () {
 	var userLocation = document.getElementById('address').value
 	sessionStorage.setItem('address', JSON.stringify(userLocation))
-	userName = document.getElementById('name').value
+	var userName = document.getElementById('name').value
 	if (localStorage.getItem("userName") == null) {
 		localStorage.setItem("userName", JSON.stringify(userName))
 	}
@@ -33,6 +15,14 @@ function checkLocalStorage () {
 	if (localStorage.getItem('userName') == null) {
 		storeUserName()
 	} else {
-		userName = JSON.parse(localStorage.getItem('userName'))
+		var userName = JSON.parse(localStorage.getItem('userName'))
+	}
+	return userName
+}
+
+function welcomeMessage (userName) {
+	if(localStorage.getItem('userName') !== null) {
+		var welcomeMessagePosition = document.getElementById('welcomeMessage')
+		var welcomeMessage = document.createTextNode('Wecome back ' + userName + '!')
 	}
 }

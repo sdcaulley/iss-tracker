@@ -19,19 +19,11 @@ var mapOptions = {
  scrollwheel: false,
 }
 
-
 // Draws the map
 function initMap() {
 	geocoder = new google.maps.Geocoder();
 	map = new google.maps.Map(document.getElementById('mapCanvas'), mapOptions);
 }
-
-
-
-
-
-
-
 
 // Recieves the ISS location from JSONP
 function findISS() {
@@ -47,7 +39,6 @@ function findISS() {
 	// console.log(issLocRequests);
 }
 
-
 // ISS location data is stored in this
 function issLoc(data) {
 	issLat = data.iss_position.latitude;
@@ -57,7 +48,6 @@ function issLoc(data) {
 	map.setCenter(new google.maps.LatLng(issLat, issLng));
 	// console.log("issLocation");
 }
-
 
 //Gets new ISS data and sets map center every 5 seconds
 var locationTimer = setInterval(findISS, 5000);
@@ -72,12 +62,10 @@ function getPass(lat, lng) {
 	console.log("passTimes script cleared");
 }
 
-
 // contains the trackign data from a overhead pass API request
 function passTimes(data) {
  passEstimate = data;
 }
-
 
 // Receives the overhead pass estimates from JSONP
 function getAstronaut() {
@@ -89,13 +77,8 @@ function getAstronaut() {
 	console.log("Astronaut script cleared");
 }
 
-
 // Contains the Data from getAstronaut() which gives names and current craft
 function inSpace(data) {
 	numberAstro = data.number; // Qty of people currently in space
 	namesInSpace = data.people; // Names of the people in space
-	console.log(data);
-	for (i = 0; i < data.people.length; i++) {
-    console.log(data.people[i].name+" is currently aboard the "+data.people[i].craft); // Console logs names and craft in calling getAstronaut()
-	}
 }

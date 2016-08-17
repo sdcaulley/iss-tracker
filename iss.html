@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Lora|Roboto" rel="stylesheet" />
+</head>
+
+<body>
     <header>
-      <nav></nav>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="iss.html" class="active">ISS Page</a></li>
+                <li><a href="wiki.html">Wiki Page</a></li>
+            </ul>
+        </nav>
     </header>
+    <aside>
+
+    </aside>
     <content>
       <div id="mapCanvas" class="map"></div>
 
@@ -17,7 +29,10 @@
       <div id="theISSIsLocatedAt"> </div>
       <div id="userISSLocateReq"> </div>
     </content>
-    <footer></footer>
+    <aside>
+      <!-- <a class="twitter-timeline" data-width="220" data-height="400" href="https://twitter.com/ISS_Update">Tweets by ISS_Update</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+    </aside>
+    <footer><p>&copy; 2016 - Uber Space Cadets</p></footer>
 
     <!-- Parking for ISS overhead pass estimator API-->
 

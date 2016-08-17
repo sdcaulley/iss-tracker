@@ -24,18 +24,52 @@ html, body {
 	width: 80%;
 }
 
+/* Navigation */
+
+header{
+	font-family: 'Audiowide', cursive;
+  font-weight: normal;
+	margin: 0 auto;
+}
+
+.navbar, ul, li{
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+	box-sizing: border-box;
+	display: inline-block;
+	color: #ffffff;
+}
+
+a:link{
+		text-decoration: none;
+}
+a:visited {
+    color: #ffffff;
+		text-decoration: none;
+}
+a:hover {
+    color: #069cf9;
+		text-decoration: none;
+}
+a.active {
+    color: #e32e3d;
+		text-decoration: none;
+}
+
+
 aside{
 	box-sizing: border-box;
-	background-color: red;
+	background-color: #ffffff;
   display: block;
   float: right;
-  width: 33%;
+  width: 20%;
 	height: 400px;
 }
 
 .twitter{
 	display: block;
-	width:75%;
+	width:100%;
 	height: auto;
 }
 .astronaut-info{
@@ -67,6 +101,8 @@ aside{
 	display: block;
 }
 
+
+/* Form */
 .main-form{
 	margin: 0 auto;
 	display: block;
@@ -80,14 +116,20 @@ aside{
 	height: 30%;
 }
 
+/* Tables */
+
 .astronaut-table, td, th{
 	margin: 0 auto;
 	border: 1px solid #ffffff;
   border-collapse: collapse;
 	padding: 5px;
   text-align: left;
-
 }
+
+#wrap, img{
+	padding-top: 30px;
+}
+
 /* Footer */
 
 footer{
