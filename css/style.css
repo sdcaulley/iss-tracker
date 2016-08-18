@@ -11,6 +11,7 @@ html, body {
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;  color: #ffffff;
 }
+/* Map */
 
 /* Navigation */
 header{
@@ -54,11 +55,11 @@ aside{
   color: #069cf9;
   font-size: 2em;
 }
-
 #liveStream{
 	border: 0px none transparent;
 }
 
+/* Tables */
 .astronaut-table, td, th{
 	border: 1px solid #ffffff;
   border-collapse: collapse;
