@@ -18,10 +18,32 @@ html, body {
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;  color: #ffffff;
 }
+<<<<<<< HEAD
 #mapCanvas {
 	margin: 0 auto;
 	height: 60%;
 	width: 60%;
+=======
+/* Map */
+content.map-content{
+	width: 66.5%;
+	height: 500px;
+	box-sizing: border-box;
+	float: left;
+}
+aside.map-aside{
+	width: 33.5%;
+	height:500px;
+	box-sizing: border-box;
+}
+#mapCanvas{
+	width: 100%;
+	height: 500px;
+}
+iframe{
+	width: 100%;
+	height: 500px;
+>>>>>>> 46c17b083334576932a7aa39ec9ed1c0ebf2ddc4
 }
 
 aside{
@@ -47,15 +69,25 @@ aside{
 	width: 66%;
 	height: auto;
 }
+<<<<<<< HEAD
+=======
+#welcomeMessage{
+	text-align: center;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+	padding: 20px;
+	color: #e32e3d;
+}
+>>>>>>> 46c17b083334576932a7aa39ec9ed1c0ebf2ddc4
 
 /* Logo Related */
 
 .main-logo{
   margin: 0 auto;
   width: 30%;
-  height: 30%;
+  height: auto;
 	display: block;
-	padding-bottom: 10%;
+
 }
 .logo-text{
 	margin: 0 auto;
@@ -63,8 +95,9 @@ aside{
   font-family: 'Audiowide', cursive;
   font-weight: normal;
   color: #069cf9;
-  font-size: 30px;
+  font-size: 2em;
 	display: block;
+	position: relative;
 }
 
 .main-form{
@@ -75,7 +108,6 @@ aside{
 
 .astronaut-name{
 	margin: 0 auto;
-	border-radius:50%;
 	width:30%;
 	height: 30%;
 }
@@ -84,7 +116,7 @@ aside{
 	margin: 0 auto;
 	border: 1px solid #ffffff;
   border-collapse: collapse;
-	padding: 5px;
+	padding: 10px;
   text-align: left;
 
 }
