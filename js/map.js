@@ -59,6 +59,7 @@ function issLoc(data) {
 
 //Gets new ISS data and sets map center every 5 seconds
 var locationTimer = setInterval(findISS, 5000);
+var geoTimer = setInterval(geoTracked, 5000);
 
 
 // Receives the overhead pass estimates from JSONP
@@ -132,11 +133,11 @@ function geoTracked() {
     if (request.status >= 200 && request.status < 400) {
       // Success!
       var data = JSON.parse(request.responseText);
-  	  console.log("got JSON");
+      console.log("got JSON");
       geoPlace = data;
     } else {
       // We reached our target server, but it returned an error
-  		console.log("Geo JSON failure");
+      console.log("Geo JSON failure");
     }
   };
 
@@ -145,6 +146,8 @@ function geoTracked() {
   };
 
   request.send();
+
+	document.getElementById("stringISSLoc").textContent = geoPlace.results[0].formatted_address;
 };
 
 window.onload = setMarker
