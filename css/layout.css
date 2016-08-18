@@ -45,21 +45,29 @@ aside{
   float: right;
   width: 20%;
 	height: auto;
+	position: fixed;
 }
+
 .twitter{
 	display: block;
 	width:100%;
 	height: auto;
 }
+
+
 .astronaut-info{
 	box-sizing: border-box;
 	padding-left: 50px;
 	padding-right: 50px;
 	display: block;
-	float: left;
+	float: right;
 	width: 80%;
 	height: auto;
+	font-size: 23px;
 }
+
+
+
 #welcomeMessage{
 	text-align: center;
   padding: 20px;
@@ -89,12 +97,12 @@ aside{
 /* Tables */
 .astronaut-table, td, th{
 	margin: 0 auto;
-	padding: 10px;
+	padding: 25px;
   text-align: left;
 }
 
 #wrap, img{
-	padding-top: 30px;
+	padding-top: 40px;
 }
 
 /* Form Related */
