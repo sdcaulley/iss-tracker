@@ -1,1 +1,121 @@
 /*  layout */
+html, body {
+	height: 100%;
+	padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+/* Map */
+content.map-content{
+	width: 66.5%;
+	height: 500px;
+	box-sizing: border-box;
+	float: left;
+}
+aside.map-aside{
+	width: 33.5%;
+	height:500px;
+	box-sizing: border-box;
+}
+#mapCanvas{
+	width: 100%;
+	height: 500px;
+}
+iframe{
+	width: 100%;
+	height: 500px;
+}
+
+/* Navigation */
+header{
+	margin: 0 auto;
+}
+.navbar, ul, li{
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+/* Sections */
+aside{
+	box-sizing: border-box;
+  display: block;
+  float: right;
+  width: 20%;
+	height: auto;
+}
+.twitter{
+	display: block;
+	width:100%;
+	height: auto;
+}
+.astronaut-info{
+	box-sizing: border-box;
+	padding-left: 50px;
+	padding-right: 50px;
+	display: block;
+	float: left;
+	width: 80%;
+	height: auto;
+}
+#welcomeMessage{
+	text-align: center;
+  padding: 20px;
+}
+
+/* Logo Related */
+.main-logo{
+  margin: 0 auto;
+  width: 30%;
+  height: auto;
+	display: block;
+
+}
+.logo-text{
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	position: relative;
+}
+
+.astronaut-name{
+	margin: 0 auto;
+	width:30%;
+	height: 30%;
+}
+
+/* Tables */
+.astronaut-table, td, th{
+	margin: 0 auto;
+	padding: 10px;
+  text-align: left;
+}
+
+#wrap, img{
+	padding-top: 30px;
+}
+
+/* Form Related */
+.main-form{
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+#formButton{
+	padding: 10px;
+}
+#name{
+	padding: 5px;
+}
+#address{
+	padding: 5px;
+}
+
+/* Footer */
+footer{
+	clear: both;
+	text-align: center;
+  padding: 10px;
+}

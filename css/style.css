@@ -1,11 +1,5 @@
-/*  style */
-@import ("css/layout.css");
-
+/*  styles */
 html, body {
-	height: 100%;
-	padding: 0;
-  margin: 0 auto;
-  text-align: center;
   font-family: 'Lora', serif;
   font-size: 16px;
   background-color: #01193b;
@@ -18,104 +12,79 @@ html, body {
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;  color: #ffffff;
 }
 
-/* Map */
-content.map-content{
-	width: 66.5%;
-	height: 500px;
-	box-sizing: border-box;
-	float: left;
+/* Navigation */
+header{
+	font-family: 'Audiowide', cursive;
+  font-weight: normal;
 }
-aside.map-aside{
-	width: 33.5%;
-	height:500px;
-	box-sizing: border-box;
+.navbar, ul, li{
+	color: #ffffff;
 }
-#mapCanvas{
-	width: 100%;
-	height: 500px;
+a:link{
+		text-decoration: none;
 }
-iframe{
-	width: 100%;
-	height: 500px;
+a:visited {
+    color: #ffffff;
+		text-decoration: none;
+}
+a:hover {
+    color: #069cf9;
+		text-decoration: none;
+}
+a.active {
+    color: #e32e3d;
+		text-decoration: none;
 }
 
+/* Sections */
 aside{
-	box-sizing: border-box;
-	background-color: red;
-  display: block;
-  float: right;
-  width: 33%;
-	height: 400px;
-}
-
-.twitter{
-	display: block;
-	width:75%;
-	height: auto;
-}
-.astronaut-info{
-	box-sizing: border-box;
-	padding-left: 10px;
-	padding-right: 10px;
-	display: block;
-	float: left;
-	width: 66%;
-	height: auto;
+	background-color: #ffffff;
 }
 
 #welcomeMessage{
-	text-align: center;
   font-family: 'Lora', serif;
   font-size: 20px;
-	padding: 20px;
 	color: #e32e3d;
 }
 
 /* Logo Related */
-
-.main-logo{
-  margin: 0 auto;
-  width: 30%;
-  height: auto;
-	display: block;
-
-}
 .logo-text{
-	margin: 0 auto;
-	text-align: center;
   font-family: 'Audiowide', cursive;
   font-weight: normal;
   color: #069cf9;
   font-size: 2em;
-	display: block;
-	position: relative;
 }
 
-.main-form{
-	margin: 0 auto;
-	display: block;
-	text-align: center;
-}
-
-.astronaut-name{
-	margin: 0 auto;
-	width:30%;
-	height: 30%;
+#liveStream{
+	border: 0px none transparent;
 }
 
 .astronaut-table, td, th{
-	margin: 0 auto;
 	border: 1px solid #ffffff;
   border-collapse: collapse;
-	padding: 10px;
-  text-align: left;
-
 }
-/* Footer */
 
+/* Form Related */
+#formButton{
+	border-radius: 5px;
+	color: #ffffff;
+	background-color: #069cf9;
+	border: none;
+}
+#formButton:hover{
+	background-color: #e32e3d;
+	text-decoration: none;
+}
+#name{
+	border-radius: 5px;
+	border: none;
+}
+#address{
+	border-radius: 5px;
+	border: none;
+}
+
+/* Footer */
 footer{
-	clear: both;
-	text-align: center;
-  padding: 10px;
   font-size: 10px;
 }
