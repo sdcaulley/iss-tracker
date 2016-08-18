@@ -147,7 +147,7 @@ function geoTracked() {
 
   request.send();
 
-	document.getElementById("stringISSLoc").textContent = geoPlace.results[0].formatted_address;
+	document.getElementById("stringISSLoc").textContent = "Current/Last Known: "+geoPlace.results[0].formatted_address;
 };
 
 window.onload = setMarker
