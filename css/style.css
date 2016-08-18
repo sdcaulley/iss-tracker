@@ -18,75 +18,38 @@ html, body {
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;  color: #ffffff;
 }
-/* Map */
 #mapCanvas {
 	margin: 0 auto;
-	height: 70%;
-	width: 80%;
+	height: 60%;
+	width: 60%;
 }
 
-/* Navigation */
-header{
-	font-family: 'Audiowide', cursive;
-  font-weight: normal;
-	margin: 0 auto;
-}
-.navbar, ul, li{
-	padding-left: 10px;
-	padding-right: 10px;
-	position: relative;
-	box-sizing: border-box;
-	display: inline-block;
-	color: #ffffff;
-}
-a:link{
-		text-decoration: none;
-}
-a:visited {
-    color: #ffffff;
-		text-decoration: none;
-}
-a:hover {
-    color: #069cf9;
-		text-decoration: none;
-}
-a.active {
-    color: #e32e3d;
-		text-decoration: none;
-}
-
-/* Sections */
 aside{
 	box-sizing: border-box;
-	background-color: #ffffff;
+	background-color: red;
   display: block;
   float: right;
-  width: 20%;
-	height: auto;
+  width: 33%;
+	height: 400px;
 }
+
 .twitter{
 	display: block;
-	width:100%;
+	width:75%;
 	height: auto;
 }
 .astronaut-info{
 	box-sizing: border-box;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
 	display: block;
 	float: left;
-	width: 80%;
+	width: 66%;
 	height: auto;
-}
-#welcomeMessage{
-	text-align: center;
-  font-family: 'Lora', serif;
-  font-size: 20px;
-	padding: 10px;
-	color: #e32e3d;
 }
 
 /* Logo Related */
+
 .main-logo{
   margin: 0 auto;
   width: 30%;
@@ -104,6 +67,12 @@ aside{
 	display: block;
 }
 
+.main-form{
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+
 .astronaut-name{
 	margin: 0 auto;
 	border-radius:50%;
@@ -111,55 +80,19 @@ aside{
 	height: 30%;
 }
 
-/* Tables */
 .astronaut-table, td, th{
 	margin: 0 auto;
 	border: 1px solid #ffffff;
   border-collapse: collapse;
 	padding: 5px;
   text-align: left;
-}
 
-#wrap, img{
-	padding-top: 30px;
 }
-
-#formButton{
-	border-radius: 5px;
-	color: #ffffff;
-	background-color: #069cf9;
-	padding: 10px;
-	border: none;
-}
-
-/* Form Related */
-.main-form{
-	margin: 0 auto;
-	display: block;
-	text-align: center;
-}
-#formButton:hover{
-	background-color: #e32e3d;
-	text-decoration: none;
-}
-#name{
-	border-radius: 5px;
-	border: none;
-	padding: 5px;
-}
-#address{
-	border-radius: 5px;
-	border: none;
-	padding: 5px;
-}
-
 /* Footer */
+
 footer{
 	clear: both;
 	text-align: center;
   padding: 10px;
   font-size: 10px;
-}
-#liveStream{
-	border: 0px none transparent;
 }
