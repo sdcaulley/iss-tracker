@@ -11,6 +11,8 @@ var issLocRequests = 0; // counts every time new location is recieved
 var issOverlay; // Google map ISS overlay
 var parkedDataIss // Holds lat-long obj
 var geocoder;
+var reticleMarker;
+var reticleImage;
 var mapOptions = {
  center: {lat: issLat, lng: issLng},
  zoom: 5,
@@ -47,7 +49,7 @@ function issLoc(data) {
 	parkedDataIss = new google.maps.LatLng(issLat, issLng);
 	map.setCenter(new google.maps.LatLng(issLat, issLng));
 	// console.log("issLocation");
-  document.getElementById("theISSIsLocatedAt").textContent = "ISS longitude: "+issLng+" latitude: "+issLat;
+  document.getElementById("theISSIsLocatedAt").textContent = "Latitude: "+issLat+"ISS Longitude: "+issLng;
 }
 
 //Gets new ISS data and sets map center every 5 seconds
@@ -83,3 +85,32 @@ function inSpace(data) {
 	numberAstro = data.number; // Qty of people currently in space
 	namesInSpace = data.people; // Names of the people in space
 }
+
+
+function setMarker() {
+  reticleImage = new google.maps.MarkerImage(
+    'img/logo_64px.png',          // marker image
+    new google.maps.Size(63, 63),    // marker size
+    new google.maps.Point(0,0),      // marker origin
+    new google.maps.Point(32, 32));  // marker anchor point
+    var reticleShape = {
+      coords: [32,32,32,32],           // 1px
+      type: 'rect'                     // rectangle
+    }
+
+  console.log("blocked");
+  reticleMarker = new google.maps.Marker({
+    position: parkedDataIss,
+    map: map,
+    icon: reticleImage,
+    shape: reticleShape,
+    optimized: false,
+    zIndex: 5
+  });
+
+
+  google.maps.event.addListener(map, 'bounds_changed',
+    function(){reticleMarker.setPosition(map.getCenter());});
+}
+
+window.onload = setMarker

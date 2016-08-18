@@ -18,20 +18,16 @@
             </ul>
         </nav>
     </header>
-    <aside>
-
-    </aside>
-    <content>
+    <content class="map-content">
       <div id="mapCanvas" class="map"></div>
+    </content>
 
-<iframe width="360" height="198" src="http://www.ustream.tv/embed/9408562?html5ui=1" allowfullscreen="true" webkitallowfullscreen="true" scrolling="no" frameborder="0" style="border: 0px none transparent;">    </iframe>
+    <aside class="map-aside">
+      <iframe src="http://www.ustream.tv/embed/9408562?html5ui=1" allowfullscreen="true" webkitallowfullscreen="true" scrolling="no" frameborder="0" id="liveStream"></iframe>
 
       <div id="userIsLocatedAt"> </div>
       <div id="theISSIsLocatedAt"> </div>
       <div id="userISSLocateReq"> </div>
-    </content>
-    <aside>
-      <!-- <a class="twitter-timeline" data-width="220" data-height="400" href="https://twitter.com/ISS_Update">Tweets by ISS_Update</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
     </aside>
     <footer><p>&copy; 2016 - Uber Space Cadets</p></footer>
 
@@ -44,7 +40,7 @@
     async defer></script>
     <script src="js/map.js"></script>
     <script src="js/app.js"></script>
-
+    
     <!-- Parking for overhead.js || to be consolidated into app.js -->
 
 
