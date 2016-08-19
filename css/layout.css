@@ -7,13 +7,13 @@ html, body {
 }
 /* Map */
 content.map-content{
-	width: 66.5%;
+	width: 50%;
 	height: 500px;
 	box-sizing: border-box;
 	float: left;
 }
 aside.map-aside{
-	width: 33.5%;
+	width: 50%;
 	height:500px;
 	box-sizing: border-box;
 }
@@ -91,10 +91,11 @@ aside{
 	margin: 0 auto;
 	padding: 10px;
   text-align: left;
+  font-size: 28px;
 }
 
 #wrap, img{
-	padding-top: 30px;
+	padding-top: 60px;
 }
 
 /* Form Related */

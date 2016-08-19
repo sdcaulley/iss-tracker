@@ -14,6 +14,7 @@ var geocoder; // Google API geocoder
 var reticleMarker;
 var reticleImage; //iss png
 var geoPlace; // reverse geocode location string
+var needMarker =false;
 var mapOptions = {
  center: {lat: issLat, lng: issLng},
  zoom: 5,
@@ -53,13 +54,17 @@ function issLoc(data) {
 	parkedDataIss = new google.maps.LatLng(issLat, issLng);
 	map.setCenter(new google.maps.LatLng(issLat, issLng));
 	// console.log("issLocation");
-  document.getElementById("theISSIsLocatedAt").textContent = "Latitude: "+issLat+"ISS Longitude: "+issLng;
+  document.getElementById("theISSIsLocatedLng").textContent = "Latitude: "+issLat;
+  document.getElementById("theISSIsLocatedLat").textContent = "Longitude: "+issLng;
+  if (!needMarker) {
+    setMarker();
+    needMarker = true;
+  }
 }
-
 
 //Gets new ISS data and sets map center every 5 seconds
 var locationTimer = setInterval(findISS, 5000);
-var geoTimer = setInterval(geoTracked, 5000);
+// var geoTimer = setInterval(geoTracked, 25000);
 
 
 // Receives the overhead pass estimates from JSONP
@@ -110,6 +115,7 @@ function setMarker() {
     }
 
   console.log("blocked");
+
   reticleMarker = new google.maps.Marker({
     position: parkedDataIss,
     map: map,
@@ -118,12 +124,11 @@ function setMarker() {
     optimized: false,
     zIndex: 5
   });
-
-
   google.maps.event.addListener(map, 'bounds_changed',
     function(){reticleMarker.setPosition(map.getCenter());});
-}
 
+}
+console.log("unseen")
 
 function geoTracked() {
   var request = new XMLHttpRequest();
@@ -156,7 +161,6 @@ function welcome () {
   document.getElementById("stringUserName").textContent = "Welcome Commander "+localStorage.userName.slice(1, -1);
 
   document.getElementById("stringUserLoc").textContent = "Your selected location";
-  setMarker();
-};
+  console.log("Should be firing here");
 
-window.onload = welcome();
+};
