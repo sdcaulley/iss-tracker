@@ -54,7 +54,8 @@ function issLoc(data) {
 	parkedDataIss = new google.maps.LatLng(issLat, issLng);
 	map.setCenter(new google.maps.LatLng(issLat, issLng));
 	// console.log("issLocation");
-  document.getElementById("theISSIsLocatedAt").textContent = "Latitude: "+issLat+"ISS Longitude: "+issLng;
+  document.getElementById("theISSIsLocatedLng").textContent = "Latitude: "+issLat;
+  document.getElementById("theISSIsLocatedLat").textContent = "Longitude: "+issLng;
   if (!needMarker) {
     setMarker();
     needMarker = true;
@@ -63,7 +64,7 @@ function issLoc(data) {
 
 //Gets new ISS data and sets map center every 5 seconds
 var locationTimer = setInterval(findISS, 5000);
-var geoTimer = setInterval(geoTracked, 5000);
+// var geoTimer = setInterval(geoTracked, 25000);
 
 
 // Receives the overhead pass estimates from JSONP
