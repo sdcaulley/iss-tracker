@@ -11,7 +11,14 @@ html, body {
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;  color: #ffffff;
 }
-/* Map */
+/* Instructions */
+#instructions{
+  color: #ffffff;
+}
+#welcome-to-iss{
+	color: #069cf9;
+  font-size: 1.3em;
+}
 
 /* Navigation */
 header{
@@ -60,11 +67,19 @@ aside{
 }
 
 /* Tables */
-.astronaut-table, td, th{
+.astronaut-table{
 	border: 1px solid #ffffff;
-  border-collapse: collapse;
+  border-radius: 5px;
 }
-
+th, td{
+  border: 1px solid #ffffff;
+}
+.bio-paragraph{
+	color: #069cf9;
+}
+.text{
+  color: #069cf9;
+}
 /* Form Related */
 #formButton{
 	border-radius: 5px;

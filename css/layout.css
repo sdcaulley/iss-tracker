@@ -5,6 +5,11 @@ html, body {
   margin: 0 auto;
   text-align: center;
 }
+#instructions{
+  padding-left: 3em;
+	padding-right: 3em;
+}
+
 /* Map */
 content.map-content{
 	width: 50%;
@@ -53,8 +58,8 @@ aside{
 }
 .astronaut-info{
 	box-sizing: border-box;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 3em;
+	padding-right: 3em;
 	display: block;
 	float: left;
 	width: 80%;
@@ -90,12 +95,18 @@ aside{
 .astronaut-table, td, th{
 	margin: 0 auto;
 	padding: 10px;
-  text-align: left;
-  font-size: 28px;
+  font-size: 1em;
+	width: 60%;
+}
+.bio-paragraph{
+	padding-bottom: 1.5em;
+}
+.col_3{
+	padding-bottom: 2em;
 }
 
 #wrap, img{
-	padding-top: 60px;
+	padding-top: 2em;
 }
 
 /* Form Related */
