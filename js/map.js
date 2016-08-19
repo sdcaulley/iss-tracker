@@ -150,4 +150,13 @@ function geoTracked() {
 	document.getElementById("stringISSLoc").textContent = "Current/Last Known: "+geoPlace.results[0].formatted_address;
 };
 
-window.onload = setMarker
+
+function welcome () {
+
+  document.getElementById("stringUserName").textContent = "Welcome Commander "+localStorage.userName.slice(1, -1);
+
+  document.getElementById("stringUserLoc").textContent = "Your selected location";
+  setMarker();
+};
+
+window.onload = welcome();
