@@ -91,10 +91,11 @@ aside{
 	margin: 0 auto;
 	padding: 10px;
   text-align: left;
+  font-size: 28px;
 }
 
 #wrap, img{
-	padding-top: 30px;
+	padding-top: 60px;
 }
 
 /* Form Related */
