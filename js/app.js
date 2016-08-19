@@ -10,19 +10,13 @@ function storeUserInput () {
 
 document.getElementById('formButton').addEventListener('click', storeUserInput)
 
-//function to check local storage for user name
-function checkLocalStorage () {
-	if (localStorage.getItem('userName') == null) {
-		storeUserName()
-	} else {
-		var userName = JSON.parse(localStorage.getItem('userName'))
-	}
-	return userName
-}
-
-function welcomeMessage (userName) {
+function welcomeMessage () {
 	if(localStorage.getItem('userName') !== null) {
+		var userName = JSON.parse(localStorage.getItem('userName'))
 		var welcomeMessagePosition = document.getElementById('welcomeMessage')
 		var welcomeMessage = document.createTextNode('Wecome back ' + userName + '!')
+		welcomeMessagePosition.appendChild(welcomeMessage)
 	}
 }
+
+welcomeMessage()

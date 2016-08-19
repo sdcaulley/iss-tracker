@@ -22,11 +22,18 @@
     <content class="map-content">
       <div id="mapCanvas" class="map"></div>
     </content>
+
     <aside class="map-aside">
-      <iframe src="http://www.ustream.tv/embed/17074538?html5ui=1" allowfullscreen="true" webkitallowfullscreen="true" scrolling="no" frameborder="0" id="liveStream"></iframe>
-      <div id="userIsLocatedAt"> </div>
-      <div id="theISSIsLocatedAt"> </div>
-      <div id="userISSLocateReq"> </div>
+    <iframe src="http://www.ustream.tv/embed/9408562?html5ui=1" allowfullscreen="true" webkitallowfullscreen="true" scrolling="no" frameborder="0" id="liveStream"></iframe>
+
+    <div id="stringUserName"> </div>
+    <div id="stringUserLoc"> </div>
+    <div id="userIsLocatedAt"> Geotracking unavailable </div>
+    <div id="theISSIsLocatedAt"> </div>
+    <div id="userISSLocateReq"> </div>
+    <div id="stringISSLoc"> </div>
+
+
     </aside>
     <footer><p>&copy; 2016 - Uber Space Cadets</p></footer>
 
@@ -39,7 +46,7 @@
     async defer></script>
     <script src="js/map.js"></script>
     <script src="js/app.js"></script>
-
+    <script src="js/geo.js"></script>
     <!-- Parking for overhead.js || to be consolidated into app.js -->
 
 
