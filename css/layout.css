@@ -14,23 +14,56 @@ html, body {
 content.map-content{
 	width: 50%;
 	height: 500px;
+	padding-right: 1em;
 	box-sizing: border-box;
 	float: left;
 }
 aside.map-aside{
 	width: 50%;
 	height:500px;
+	padding-left: 1em;
+	padding-right: 1em;
 	box-sizing: border-box;
+	border: 3px solid #069cf9;
 }
 #mapCanvas{
 	width: 100%;
 	height: 500px;
+	box-sizing: border-box;
+
+	padding-right: 1em;
+	border: 3px solid #069cf9;
 }
 iframe{
 	width: 100%;
 	height: 500px;
+	box-sizing: border-box;
+	margin-bottom: 2em;
+}
+#liveStream{
+	width: 100%;
+	height: 495px;
 }
 
+.cmdData{
+	margin-top: .5em;
+	display: block;
+	color: #069cf9;
+}
+.cmd-info{
+	height: auto;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	padding-top: 2em;
+}
+#stringUserName{
+	color: #ffffff;
+	font-size: 24px;
+	padding-top: 2em;
+	font-family: 'Audiowide', cursive;
+  font-weight: normal;
+}
 /* Navigation */
 header{
 	margin: 0 auto;
