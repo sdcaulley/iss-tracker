@@ -52,7 +52,7 @@ function issLoc(data) {
 	issLng = data.iss_position.longitude;
 	issLocation = data;
 	parkedDataIss = new google.maps.LatLng(issLat, issLng);
-	map.setCenter(new google.maps.LatLng(issLat, issLng));
+	map.panTo(new google.maps.LatLng(issLat, issLng));
 	// console.log("issLocation");
   document.getElementById("theISSIsLocatedLng").textContent = "Latitude: "+issLat;
   document.getElementById("theISSIsLocatedLat").textContent = "Longitude: "+issLng;
