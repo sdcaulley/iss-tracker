@@ -160,7 +160,8 @@ function welcome () {
 
   document.getElementById("stringUserName").textContent = "Welcome Commander "+localStorage.userName.slice(1, -1);
 
-  document.getElementById("stringUserLoc").textContent = "Your selected location";
+  document.getElementById("stringUserLoc").textContent = "Getting data for: "+sessionStorage.address.slice(1, -1);
+
   console.log("Should be firing here");
 
 };
