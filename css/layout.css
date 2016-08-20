@@ -5,27 +5,65 @@ html, body {
   margin: 0 auto;
   text-align: center;
 }
+#instructions{
+  padding-left: 3em;
+	padding-right: 3em;
+}
+
 /* Map */
 content.map-content{
 	width: 50%;
 	height: 500px;
+	padding-right: 1em;
 	box-sizing: border-box;
 	float: left;
 }
 aside.map-aside{
 	width: 50%;
 	height:500px;
+	padding-left: 1em;
+	padding-right: 1em;
 	box-sizing: border-box;
+	border: 3px solid #069cf9;
 }
 #mapCanvas{
 	width: 100%;
 	height: 500px;
+	box-sizing: border-box;
+
+	padding-right: 1em;
+	border: 3px solid #069cf9;
 }
 iframe{
 	width: 100%;
 	height: 500px;
+	box-sizing: border-box;
+	margin-bottom: 2em;
+}
+#liveStream{
+	width: 100%;
+	height: 495px;
 }
 
+.cmdData{
+	margin-top: .5em;
+	display: block;
+	color: #069cf9;
+}
+.cmd-info{
+	height: auto;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	padding-top: 2em;
+}
+#stringUserName{
+	color: #ffffff;
+	font-size: 24px;
+	padding-top: 2em;
+	font-family: 'Audiowide', cursive;
+  font-weight: normal;
+}
 /* Navigation */
 header{
 	margin: 0 auto;
@@ -53,8 +91,8 @@ aside{
 }
 .astronaut-info{
 	box-sizing: border-box;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 3em;
+	padding-right: 3em;
 	display: block;
 	float: left;
 	width: 80%;
@@ -90,12 +128,18 @@ aside{
 .astronaut-table, td, th{
 	margin: 0 auto;
 	padding: 10px;
-  text-align: left;
-  font-size: 28px;
+  font-size: 1em;
+	width: 60%;
+}
+.bio-paragraph{
+	padding-bottom: 1.5em;
+}
+.col_3{
+	padding-bottom: 2em;
 }
 
 #wrap, img{
-	padding-top: 60px;
+	padding-top: 2em;
 }
 
 /* Form Related */
