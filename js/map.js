@@ -52,7 +52,7 @@ function issLoc(data) {
 	issLng = data.iss_position.longitude;
 	issLocation = data;
 	parkedDataIss = new google.maps.LatLng(issLat, issLng);
-	map.setCenter(new google.maps.LatLng(issLat, issLng));
+	map.panTo(new google.maps.LatLng(issLat, issLng));
 	// console.log("issLocation");
   document.getElementById("theISSIsLocatedLng").textContent = "Latitude: "+issLat;
   document.getElementById("theISSIsLocatedLat").textContent = "Longitude: "+issLng;
@@ -160,7 +160,8 @@ function welcome () {
 
   document.getElementById("stringUserName").textContent = "Welcome Commander "+localStorage.userName.slice(1, -1);
 
-  document.getElementById("stringUserLoc").textContent = "Your selected location";
+  document.getElementById("stringUserLoc").textContent = "Getting data for: "+sessionStorage.address.slice(1, -1);
+
   console.log("Should be firing here");
 
 };
